@@ -36,149 +36,62 @@ namespace ArrayTest
             do
             {
                 Console.WriteLine("Using inferred typing: create a new array named numbers that will hold 5 integers:");
-                guess = Console.ReadLine();
-                if (guess == answer1)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
+                
+                var numbers = new List<int>[5];
 
-            } while (answer1 != guess);
 
-            do
-            {
+
                 Console.WriteLine("Using explicit typing: create a new array named numbers that will hold 5 integers:");
-                guess = Console.ReadLine();
-                if (guess == answer2)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
+                int[] numbers = new int[5];
+               
 
-            } while (answer2 != guess);
 
-            do
-            {
+
                 Console.WriteLine("Place the value, 10, in the numbers array at index 0:");
-                guess = Console.ReadLine();
-                if (guess == answer3)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
 
-            } while (answer3 != guess);
+                numbers[0] = 10;
 
-            do
-            {
+
+
                 Console.WriteLine("Complete the code to get the total number of elements in the numbers array");
-                Console.WriteLine("numbers.______;");
-                guess = Console.ReadLine();
-                if (guess == answer4)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
 
-            } while (answer4 != guess);
+                 "Length";
 
-            //-------------------------Lists
-            do
-            {
+
+
+
                 Console.WriteLine("Using inferred typing: create a new empty List named teachers that will hold string values:");
-                guess = Console.ReadLine();
-                if (guess == answer5)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
+               
+                var teachers = new List<int>[];
 
-            } while (answer5 != guess);
 
-            do
-            {
+
                 Console.WriteLine("Using explicit typing: create a new empty List named teachers that will hold string values:");
-                guess = Console.ReadLine();
-                if (guess == answer6)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
 
-            } while (answer6 != guess);
+                List<string> teachers = new List<string>(); 
 
-            do
-            {
+
+
                 Console.WriteLine("Add the name, Michael, to the teachers list:");
-                guess = Console.ReadLine();
-                if (guess == answer7)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
 
-            } while (answer7 != guess);
+                teachers.Add(\"Michael\");
 
-            do
-            {
+
+
                 Console.WriteLine("Remove the name, Michael, from the teachers list:");
-                guess = Console.ReadLine();
-                if (guess == answer8)
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine();
-                }
-                else
-                {
-                    Console.WriteLine("Try again");
-                    wrongCount++;
-                }
 
-            } while (answer8 != guess);
+                teachers.Remove(\"Michael\");
 
-            do
-            {
+
+
+
+
                 Console.WriteLine("The following code will get the number of elements contained in the teachers list");
                 Console.WriteLine("and store that integer in a variable named size.");
                 Console.WriteLine();
                 Console.WriteLine("The code to complete this is missing.");
                 Console.WriteLine("What property will complete the code?");
-                Console.WriteLine("var size = teachers._______;");
+                Console.WriteLine("var size = teachers.Count;");
                 guess = Console.ReadLine();
                 if (guess == answer9)
                 {
